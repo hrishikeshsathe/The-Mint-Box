@@ -1,0 +1,144 @@
+<style>
+/* Based on a Dribbble shot by Andreas Storm
+   http://dribbble.com/shots/1127916-Sign-in
+*/
+
+*{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+body{
+  background:#F7F5F2;
+  font-family:Arial;
+  font-size:12px;
+  color:#C4BCB0;
+}
+input[type="text"],
+input[type="password"]{
+  background:#EAE6E1;
+  border:0;
+  font-weight:bold;
+  padding:10px;
+  border-radius:3px;
+  width:100%;
+  margin:5px 0;
+  outline:medium none;
+  color:#838383;
+}
+input[type="checkbox"]{
+  -webkit-appearance:none;
+  width:10px;
+  height:10px;
+  position:relative;
+  outline:medium none;
+  margin-right:10px;
+}
+input[type="checkbox"]::before{
+  width:9px;
+  height:9px;
+  content:"";
+  display:block;
+  border:3px solid #C4BCB0;
+  border-radius: 9px;
+  position:absolute;
+}
+input[type="checkbox"]:checked::after{
+  width:5px;
+  height:5px;
+  content:"";
+  display:block;
+  background: #C4BCB0;
+  border-radius: 5px;
+  position:absolute;
+  left:59px;
+  top:5px;
+}
+input[type="submit"]{
+  display:block;
+  padding:10px;
+  background:#50BFA4;
+  border:0;
+  border-radius:3px;
+  font-weight:bold;
+  width:100%;
+  color:#fff;
+  cursor:pointer;
+}
+.main-form{
+  width:340px;
+  margin: 0 auto;
+  padding:50px;
+}
+.logo{
+  background:#50BFA4;
+  width:40px;
+  height:40px;
+  display:block;
+  margin:0 auto 30px;
+  border-top-left-radius:20px;
+  border-top-right-radius:20px;
+  border-bottom-left-radius:20px;
+  position:relative;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.logo::before{
+  width:14px;
+  height:14px;
+  display:block;
+  border:5px solid #F7F5F2;
+  content:"";
+  position:absolute;
+  border-radius:14px;
+  top:8px;
+  left:8px;
+}
+.main-form > label{
+  display:block;
+  margin:10px 0 15px;
+  line-height:15px;
+  cursor:pointer;
+}
+.main-form > div{
+  margin-top:20px;
+}
+a{
+  color:#C4BCB0;
+  text-decoration:none;
+}
+.main-form > a{
+  font-size:11px;
+  display:block;
+  text-align:center;
+  margin:10px 0;
+}
+.main-form > div >a:first-child{
+  font-weight:bold;
+}
+.main-form > div >a:nth-child(2){
+  border:1px solid #3DA087;
+  display:inline-block;
+  border-radius:3px;
+  color:#3DA087;
+  font-weight:bold;
+  padding:7px 15px;
+  margin-left:30px;
+}
+</style>
+
+<div class="main-form">
+  <i class="logo"></i>
+  <input type="text" placeholder="Username" value="">
+  <input type="password" placeholder="Password" value="">
+  <label>
+    <input type="checkbox"> Remember me
+  </label>
+  <a href="index.php"><input type="submit" value="Sign in"></a>
+  <a href="#" title="">Forgot your password?</a>
+  <div>
+    <a href="#" title="">Don't have an account?</a>
+    <a href="#" title="">Sign Up</a>
+  </div>
+</div>
